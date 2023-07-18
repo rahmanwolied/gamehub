@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend:wght@300;400&family=Work+Sans:wght@200;400;700;800&display=swap');
+
+:root {
+	--accent: rgba(255, 65, 165, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+}
+
+/* NAV SECTION */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 0;
+	margin: 0 10rem;
+	background-color: #fff;
+}
+header {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #000;
+}
+
+.logo img {
+	width: 25%;
+}
+
+nav .logo h1 span {
+	color: var(--accent);
+	margin-left: 20px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	list-style: none;
+	margin-left: 3rem;
+}
+
+nav ul li a {
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+}
+
+.nav-div {
+	font-size: 0.8rem;
+	padding: 15px 20px;
+	background-color: rgba(10, 2, 35, 0.1);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+.nav-div img {
+	width: 15%;
+}
+
+/* HERO SECTION */
+
+.banner-section {
+	background-image: url('images/gradient.png');
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 10rem;
+}
+.banner-image {
+	width: 50%;
+}
+
+.banner-content > h1 {
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.banner-content .banner-title {
+	font-size: 5rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	background: linear-gradient(#f948b2, #8758f1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 2rem;
+}
+
+.banner-info {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.2em;
+}
+
+.banner-buttons {
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.banner-buttons button {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 3rem;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: #f948b2;
+}
+
+.banner-buttons button:hover {
+	background-color: #8758f1;
+}
+
+.banner-buttons button:last-child {
+	background-color: #4ec5f7;
+}
+
+.banner-buttons button:last-child:hover {
+	background-color: #1a8cc4;
+}
