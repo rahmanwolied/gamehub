@@ -100,13 +100,16 @@ nav ul li a {
 	text-transform: uppercase;
 }
 
+.gradient {
+	background: linear-gradient(#f948b2, #8758f1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .banner-content .banner-title {
 	font-size: 5rem;
 	font-weight: 800;
 	text-transform: uppercase;
-	background: linear-gradient(#f948b2, #8758f1);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	margin-bottom: 2rem;
 }
 
@@ -144,4 +147,80 @@ nav ul li a {
 
 .banner-buttons button:last-child:hover {
 	background-color: #1a8cc4;
+}
+
+/* Game showcase Section */
+
+.game-showcase {
+	padding: 8rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 10rem;
+}
+
+.game-showcase .section-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-info h1 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.section-info p {
+	font-size: 0.8rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.games {
+	margin-top: 2rem;
+	display: flex;
+	width: 100%;
+	gap: 1.5rem;
+	/* flex-wrap: wrap; */
+}
+
+.game {
+	width: 100%;
+}
+
+.game img {
+	width: 100%;
+}
+
+.img-div {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.overlay {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: #f948b2;
+	font-size: 1rem;
+	font-weight: 700;
+	background-color: rgba(0, 0, 0, 0.5);
+	gap: 1rem;
+	border-radius: 1rem;
+	border: 3px solid #f948b2;
+	display: none;
+}
+
+.overlay img {
+	width: 15%;
+}
+
+.img-div:hover .overlay {
+	display: flex;
 }
