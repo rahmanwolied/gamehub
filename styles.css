@@ -18,7 +18,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem 0;
-	margin: 0 10rem;
+	margin: 0 13%;
 	background-color: #fff;
 }
 header {
@@ -88,7 +88,7 @@ nav ul li a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 10rem;
+	margin: 0 13%;
 }
 .banner-image {
 	width: 50%;
@@ -126,7 +126,7 @@ nav ul li a {
 	gap: 1rem;
 }
 
-.banner-buttons button {
+.button {
 	padding: 1rem 2rem;
 	border: none;
 	border-radius: 3rem;
@@ -152,11 +152,11 @@ nav ul li a {
 /* Game showcase Section */
 
 .game-showcase {
-	padding: 8rem 0;
+	padding: 8rem 0 0 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 10rem;
+	margin: 0 13%;
 }
 
 .game-showcase .section-info {
@@ -166,14 +166,15 @@ nav ul li a {
 }
 
 .section-info h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 700;
 }
 
 .section-info p {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 400;
 	text-align: center;
+	margin-top: 1rem;
 }
 
 .games {
@@ -223,4 +224,144 @@ nav ul li a {
 
 .img-div:hover .overlay {
 	display: flex;
+	cursor: pointer;
+}
+
+/* Play Instantly */
+
+.play-instantly {
+	margin: 0 13%;
+	margin-top: 10rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.play-instantly .section-info {
+	text-align: right;
+}
+
+.play-instantly .section-info p {
+	text-align: right;
+	max-width: 40ch;
+}
+
+.play-instantly-images {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 60%;
+}
+
+.small-img {
+	object-fit: contain;
+	align-self: flex-end;
+	overflow: hidden;
+	position: relative;
+	left: 50%;
+	transform: translateX(-100%) translateY(30%);
+}
+
+.big-img {
+	overflow: hidden;
+}
+
+/* Careers */
+
+.careers {
+	margin-top: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff42a5;
+}
+
+.list {
+	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.list p {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+}
+
+.left p {
+	text-align: left;
+}
+
+.right p {
+	text-align: right;
+}
+
+.careers .section-info {
+	text-align: left;
+	color: white;
+	margin-left: 13%;
+}
+
+.section-info .section-title p {
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.875rem;
+	text-align: left; /* 166.667% */
+}
+
+.section-info .button {
+	background-color: white;
+	color: #f948b2;
+	font-family: Work Sans;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.careers img {
+	max-width: 50%;
+}
+
+.small-games {
+	background-color: #f5e3ee80;
+}
+
+.games-container {
+	padding: 10rem 0;
+	margin: 0 13%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.games-container .game {
+	display: flex;
+	background-color: white;
+	align-items: center;
+	width: auto;
+	border-radius: 3.125rem;
+	padding: 0.5rem;
+}
+
+.games-container .game img {
+	object-fit: contain;
+	flex: 0;
+}
+
+.games-container .game p {
+	padding: 0 1rem;
+	color: #0b0223;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.games-container .game:hover {
+	box-shadow: 0 0 0 2px #f948b2;
+}
+
+.games-container .game:hover p {
+	color: #f948b2;
 }
