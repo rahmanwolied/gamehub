@@ -25,7 +25,7 @@ header {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
+.logo {
 	display: flex;
 	align-items: center;
 	font-size: 1.2rem;
@@ -37,7 +37,7 @@ nav .logo {
 	width: 25%;
 }
 
-nav .logo h1 span {
+.logo h1 span {
 	color: var(--accent);
 	margin-left: 20px;
 }
@@ -360,8 +360,50 @@ nav ul li a {
 
 .games-container .game:hover {
 	box-shadow: 0 0 0 2px #f948b2;
+	cursor: pointer;
 }
 
 .games-container .game:hover p {
 	color: #f948b2;
+}
+
+footer {
+	background-color: #0b0223;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10rem 0;
+}
+
+footer .logo {
+	color: white;
+}
+
+.footer-links a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 4rem 3rem;
+}
+
+.footer-links a:hover {
+	color: #f948b2;
+}
+
+footer .logos img {
+	margin-left: 3rem;
+}
+
+.footer-info a,
+.footer-info p {
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+}
+
+.footer-info a:hover {
+	color: #fff;
 }
